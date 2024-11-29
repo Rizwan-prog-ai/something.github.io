@@ -1,0 +1,149 @@
+/* Reset & General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Sticky Header Style */
+header {
+    position: sticky;
+    top: 0;
+    padding: 10px 0;
+    width: 100%; 
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+header h1, p {
+    color: #c09ae4;
+    text-align: center;
+}
+
+body, html {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom, #3f0071, #1a002b);
+    color: #e7c9f8;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+/* Navigation Bar */
+nav {
+    background: #4b007f;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #d1b3ff;
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    padding: 40px;
+    text-align: center;
+}
+
+/* Section Titles */
+h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #d1b3ff;
+}
+
+/* Links within Sections */
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li a {
+    color: #d1b3ff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease-in-out;
+}
+
+ul li a:hover {
+    color: #ffffff;
+    text-shadow: 0px 0px 8px #d1b3ff;
+}
+
+hr.section-divider {
+    border: 0;
+    height: 2px;
+    background-color: #9b59b6; /* light purple color */
+    margin: 20px 0; /* Adds space before and after the line */
+}
+
+/* Footer */
+footer {
+    background-color: #4b007f;
+    text-align: center;
+    padding: 20px;
+    color: #c7c7c7;
+    width: 100%;
+    font-size: 14px;
+    position: relative;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #5e00a8;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #6f00c5;
+}
+
+/* Buttons or Interactive Elements */
+button {
+    background: #6f00c5;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: #8f00ff;
+}
+
+/* Add a subtle box shadow to the sections */
+section {
+    background: rgba(75, 0, 127, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    color: white;
+}
+
+/* Ensure footer doesn't overlap */
+main {
+    flex: 1;
+    overflow: auto;
+}
